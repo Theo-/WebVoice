@@ -1,0 +1,114 @@
+.app_container {
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	overflow: hidden;
+	min-width: 500px;
+}
+
+/* Bar du haut */
+#top_bar {
+	height: 50px;
+	width: 100%;
+	background-color: #0078FF;
+	color: white;
+}
+#top_bar ul li {
+	display:block;
+	float: left;
+	height: 30px;
+	padding: 12px 15px 0px 15px;
+}
+#top_bar ul li i {
+	margin-top: 3px !important;
+}
+#top_bar ul:first-child li:hover {
+	cursor:pointer;
+	border-top: 2px white solid;
+}
+#top_bar ul li a {
+	color: white;
+}
+#top_bar ul {
+	height: 30px;
+}
+#top_bar ul:first-child { /* None modulable code. Pas tapper :) */
+	float:right;
+}
+
+/* JS Script automaticly resize element */
+#left_container {
+	padding: 0px;
+	width: 300px;
+	background-color: rgb(200,200,200);
+	float:left;
+}
+#discussion_wrap {
+	background-color: rgb(240,240,240);
+	float:right;
+}
+#contact_list, #discussion_wrap {
+	overflow: scroll;
+}
+
+/* Left bar : Contact list */
+#contact_list h1 {
+	color: rgb(60,60,60);
+	font-size: 20px;
+	margin: 10px 20px 8px 20px;
+	padding: 3px;
+	border-bottom: 1px grey solid;
+}
+#left_container ul li {
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	cursor: pointer;
+	list-style:none;
+	padding: 3px 20px 3px 20px;
+}
+#contact_list ul li a {
+	color: black;
+}
+#contact_list ul li:hover a {
+	color: white;
+}
+#left_container ul li:hover {
+	background-color: #0078FF;
+	color: white;
+}
+
+/* Left Bar : Video Box */
+#videoBox {
+	background-color: rgb(185,185,185);
+	width: 300px;
+	height: auto;
+}
+#videoBox video {
+	height: 300px;
+	width:300px;
+}
+#videoBox h1 {
+	height: 30px;
+	font-size: 16px;
+	padding: 4px 0px 5px 6px;
+	background-color: rgb(170,170,170);
+}
+
+/* Tab Panel Bar */
+#discussion_wrap ul {
+	height: 45px;
+	width: 100%;
+	margin: 0;
+	background-color: rgb(230,230,230);
+}
+#discussion_wrap ul li {
+	display:block;
+	float: left;
+	height: 45px;
+	padding: 10px 20px 0px 20px;
+}
+#discussion_wrap ul li:hover, #discussion_wrap ul li.selected {
+	cursor:pointer;
+	background-color: rgb(220,220,220);
+}

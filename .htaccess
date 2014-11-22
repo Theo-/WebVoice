@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# Site Resource
+RewriteRule (.*).room  client/index.php?room=$1 [L]
+RewriteRule client/(.*)  client/$1 [L]
+RewriteRule ^([0-9]{1,4})$  website/$1 [L]

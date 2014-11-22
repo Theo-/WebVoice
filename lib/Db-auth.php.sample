@@ -1,0 +1,10 @@
+<?
+/* This file contains the authentication informations to connect to the database.
+ * To get this site working, you must copy the content to a new file named
+ * "Db-auth.php" and replace URL, Database, User and Password parameters
+ * with the appropriate values.
+ */
+
+function basePDO() {
+	return new DB("URL", "Database", "User", "Password");
+}
